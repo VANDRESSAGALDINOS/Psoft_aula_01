@@ -25,8 +25,8 @@ public class Controller {
         return this.produtoService.listarProduto();
     }
 
-    public void criarLote(){
-        return this.loteService.criarLote();
+    public void criarLote(Integer quantidade, String data, Produto produto){
+        this.loteService.criarLote(quantidade,data, produto);
     }
 
 }

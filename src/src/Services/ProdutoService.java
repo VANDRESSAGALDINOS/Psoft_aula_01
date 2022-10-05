@@ -31,8 +31,8 @@ public class ProdutoService {
         return retorno.trim();
     }
 
-    public void criarLote(Produto produto){
-        Lote lote = new Lote(40,"10")
+    public void criarLote(Integer quantidade, String data, Produto produto){
+        Lote lote = new Lote(quantidade,data, produto);
     }
 
     public String listarLote(){
