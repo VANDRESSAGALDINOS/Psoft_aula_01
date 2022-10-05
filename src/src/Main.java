@@ -1,9 +1,27 @@
+
+import Controller.Controller;
+import Services.ProdutoService;
+
+import javax.naming.ldap.Control;
+import java.util.Scanner;
+
 public class Main {
 
-public static  void main(String[] args) {
-    Produto produto = new Produto("leite", "Intambé", 4.50);
-    Lote lote = new Lote(4, "10-10-2022", produto);
-    System.out.println(produto.toString());
-    System.out.println(lote.toString());
-}
+    public static void main(String[] args) {
+        Controller controller = new Controller();
+
+
+    }
+
+    private static void criarProduto(Controller controller) {
+        controller.criarProduto("ProdutoX", "Fabricante X", 10.50);
+    }
+
+    private static  void listarProdutos(Controller controller){
+        System.out.printf(controller.listarProduto());
+    }
+
+    private static void criarLote(Controller controller){
+        System.out.printf(controller.criaLote());
+    }
 }

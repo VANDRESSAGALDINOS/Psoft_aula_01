@@ -1,3 +1,5 @@
+package Model;
+
 import java.util.Objects;
 
 public class Lote {
@@ -29,7 +31,7 @@ public class Lote {
 
     @Override
     public String toString() {
-        return "Lote{" +
+        return "Model.Lote{" +
                 "quantidade=" + quantidade +
                 ", dataValidade='" + dataValidade + '\'' +
                 ", produto=" + produto +

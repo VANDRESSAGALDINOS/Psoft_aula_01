@@ -1,3 +1,5 @@
+package Model;
+
 import java.util.Objects;
 
 public class Produto {
@@ -51,7 +53,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
+        return "Model.Produto{" +
                 "nome='" + nome + '\'' +
                 ", fabricante='" + fabricante + '\'' +
                 ", preco=" + preco +
